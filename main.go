@@ -9,7 +9,7 @@ import (
 func main() {
     p, _ := proxy.New(proxy.ProxyOptions{
         Balancer: func(req *http.Request) (string, error) {
-            return "https://rocketbotroyale2.winterpixel.io/", nil
+            return "https://suprem.io/", nil
         },
     })
     http.ListenAndServe(":"+os.Getenv("PORT"), p)
